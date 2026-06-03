@@ -7,10 +7,11 @@ arch=('any')
 url="https://github.com/isaltydex-crypto/Noctra"
 license=('GPL-3.0-or-later')
 depends=('breeze' 'breeze-gtk' 'noto-fonts' 'papirus-icon-theme')
-source=('noctra-branding.conf')
-sha256sums=('SKIP')
+source=('noctra-branding.conf' 'motd')
+sha256sums=('SKIP' 'SKIP')
 
 package() {
   install -Dm644 noctra-branding.conf "${pkgdir}/usr/share/noctra/branding/noctra-branding.conf"
+  install -Dm644 motd "${pkgdir}/etc/motd"
   install -dm755 "${pkgdir}/usr/share/noctra/branding/assets"
 }

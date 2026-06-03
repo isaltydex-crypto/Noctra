@@ -34,25 +34,21 @@ Danger:       #ef5f67
 
 ## Logo Concepts
 
-The first concept sheet has four directions:
+The first raster concept sheet was rejected. The current direction is ASCII/script-friendly branding:
 
 ```text
-docs/assets/noctra-logo-concepts-v1.png
+docs/ascii-logo-concepts.md
 ```
+
+Current recommended identity:
 
 ```text
-A: Crescent moon inside shield
-B: Minimal N monogram with shadow cut
-C: Eclipse or horizon mark
-D: Shield with network/lock geometry
+Primary terminal/header mark: -----[ NOCTRA ]-----
+Full boot/MOTD banner: ASCII NOCTRA wordmark
+Short CLI mark: N/ NOCTRA
 ```
 
-Initial recommendation: choose A or B.
-
-- A is strongest for privacy + protection and reads well for consumers.
-- B is strongest for premium tech/product identity and can work well as an app icon.
-- C is calm and elegant, but less security-specific.
-- D communicates security directly, but risks looking generic or enterprise-heavy.
+The first production graphic logo can still be recreated as SVG later, but the early distro identity should work cleanly in shell scripts, install logs, terminal banners, and docs.
 
 ## Typography Direction
 
@@ -105,6 +101,7 @@ Noctra OS is a privacy-first Arch-based desktop built for encrypted systems, Tor
 Future assets:
 
 ```text
+ascii-logo.txt
 logo-symbol.svg
 logo-wordmark.svg
 wallpaper-default.png
@@ -113,4 +110,4 @@ plasma-look-and-feel/
 noctra-color-scheme.colors
 ```
 
-The first production logo should be recreated as SVG, not shipped as an AI-generated raster.
+The first production logo should be deterministic and reproducible. Prefer ASCII and SVG assets over AI-generated raster logos.

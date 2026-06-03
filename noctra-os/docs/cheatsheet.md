@@ -188,16 +188,16 @@ Tooling style: lightweight control/visibility, not a full pentesting distro
 Current logo directions:
 
 ```text
-A: Crescent moon inside shield
-B: Minimal N monogram with shadow cut
-C: Eclipse or horizon mark
-D: Shield with network/lock geometry
+Primary terminal/header mark: -----[ NOCTRA ]-----
+Full boot/MOTD banner: ASCII NOCTRA wordmark
+Short CLI mark: N/ NOCTRA
 ```
 
 Branding doc:
 
 ```text
 noctra-os/docs/branding.md
+noctra-os/docs/ascii-logo-concepts.md
 noctra-os/docs/assets/noctra-logo-concepts-v1.png
 ```
 
@@ -233,8 +233,8 @@ nyx
 
 - First `mkarchiso` build on native Arch laptop
 - Fix package availability issues from first build
-- Select final logo direction
-- Convert selected logo to SVG
+- Select final ASCII/header direction
+- Convert selected direction to SVG if needed
 - Create real KDE Plasma layout config
 - Build and package Calamares
 - Create `noctra-calamares-config`
@@ -247,4 +247,5 @@ nyx
 ```text
 2026-06-04: Initial cheatsheet created.
 2026-06-04: Added Noctra Dark branding direction and logo concept options.
+2026-06-04: Replaced raster logo direction with ASCII/script-friendly concepts.
 ```
