@@ -39,3 +39,5 @@ See `docs/build-arch-vm.md`.
 For a native build laptop without a VM, see `docs/arch-build-laptop-step-by-step.md`.
 
 For quick commands and current project state, see `docs/cheatsheet.md`.
+
+For the current visual identity direction, see `docs/branding.md`.

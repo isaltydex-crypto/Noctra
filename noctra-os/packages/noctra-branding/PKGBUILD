@@ -1,0 +1,16 @@
+# Maintainer: Noctra OS
+pkgname=noctra-branding
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Noctra OS branding assets and desktop identity"
+arch=('any')
+url="https://github.com/isaltydex-crypto/Noctra"
+license=('GPL-3.0-or-later')
+depends=('breeze' 'breeze-gtk' 'noto-fonts' 'papirus-icon-theme')
+source=('noctra-branding.conf')
+sha256sums=('SKIP')
+
+package() {
+  install -Dm644 noctra-branding.conf "${pkgdir}/usr/share/noctra/branding/noctra-branding.conf"
+  install -dm755 "${pkgdir}/usr/share/noctra/branding/assets"
+}

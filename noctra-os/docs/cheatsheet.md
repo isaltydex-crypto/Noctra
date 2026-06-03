@@ -135,6 +135,7 @@ Current package directories:
 
 ```text
 noctra-os/packages/noctra-base/
+noctra-os/packages/noctra-branding/
 noctra-os/packages/noctra-desktop/
 noctra-os/packages/noctra-network/
 noctra-os/packages/noctra-tools-core/
@@ -160,6 +161,7 @@ clean chroot build -> sign package -> publish Noctra repo -> consume in archiso/
 noctra-os/README.md
 noctra-os/docs/arch-build-laptop-step-by-step.md
 noctra-os/docs/build-arch-vm.md
+noctra-os/docs/branding.md
 noctra-os/docs/network-model.md
 noctra-os/docs/security-baseline.md
 noctra-os/packages/README.md
@@ -172,11 +174,31 @@ Name: Noctra OS
 Base: Arch Linux
 Desktop: KDE Plasma
 Desktop direction: macOS Ventura-inspired
+Visual direction: Noctra Dark
+Accent: restrained cyan/blue
 Installer target: Calamares
 Disk encryption: LUKS2 by default
 Default network mode: Tor Locked
 Clearnet: manual, time-limited unlock
 Tooling style: lightweight control/visibility, not a full pentesting distro
+```
+
+## Branding
+
+Current logo directions:
+
+```text
+A: Crescent moon inside shield
+B: Minimal N monogram with shadow cut
+C: Eclipse or horizon mark
+D: Shield with network/lock geometry
+```
+
+Branding doc:
+
+```text
+noctra-os/docs/branding.md
+noctra-os/docs/assets/noctra-logo-concepts-v1.png
 ```
 
 ## First ISO Test Checklist
@@ -211,7 +233,8 @@ nyx
 
 - First `mkarchiso` build on native Arch laptop
 - Fix package availability issues from first build
-- Add Noctra branding
+- Select final logo direction
+- Convert selected logo to SVG
 - Create real KDE Plasma layout config
 - Build and package Calamares
 - Create `noctra-calamares-config`
@@ -223,4 +246,5 @@ nyx
 
 ```text
 2026-06-04: Initial cheatsheet created.
+2026-06-04: Added Noctra Dark branding direction and logo concept options.
 ```

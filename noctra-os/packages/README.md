@@ -5,6 +5,7 @@ Future Noctra packages should live here as PKGBUILD directories.
 Initial package targets:
 
 - `noctra-base`: system defaults, nftables rules, Tor config, services
+- `noctra-branding`: Noctra identity, palette, and future assets
 - `noctra-desktop`: KDE layout, theme, icons, SDDM
 - `noctra-calamares-config`: installer configuration
 - `noctra-tools-core`: lightweight visibility/control tool bundle
