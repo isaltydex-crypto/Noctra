@@ -1,0 +1,7 @@
+noctra-os/out/
+noctra-os/work/
+noctra-os/*.iso
+noctra-os/*.img
+noctra-os/*.tar
+noctra-os/*.tar.*
+*.log
