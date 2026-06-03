@@ -188,8 +188,8 @@ Tooling style: lightweight control/visibility, not a full pentesting distro
 Current logo directions:
 
 ```text
-Primary terminal/header mark: angular peak + NOCTRA
-Full boot/MOTD banner: peak mark + ASCII NOCTRA wordmark
+Primary terminal/header mark: Arch-style Noctra N mark
+Full boot/MOTD banner: Noctra N mark + ASCII NOCTRA wordmark
 Short CLI mark: N/ NOCTRA
 ```
 
@@ -249,4 +249,5 @@ nyx
 2026-06-04: Added Noctra Dark branding direction and logo concept options.
 2026-06-04: Replaced raster logo direction with ASCII/script-friendly concepts.
 2026-06-04: Added Arch-like Noctra peak mark direction.
+2026-06-04: Added Arch-style Noctra N ASCII mark.
 ```

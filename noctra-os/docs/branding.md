@@ -43,12 +43,12 @@ docs/ascii-logo-concepts.md
 Current recommended identity:
 
 ```text
-Primary terminal/header mark: angular peak + NOCTRA
-Full boot/MOTD banner: peak mark + ASCII NOCTRA wordmark
+Primary terminal/header mark: Arch-style Noctra N mark
+Full boot/MOTD banner: Noctra N mark + ASCII NOCTRA wordmark
 Short CLI mark: N/ NOCTRA
 ```
 
-The current logo direction is Arch-like in its sharp Linux peak geometry, but should stay Noctra-specific and avoid copying the official Arch Linux mark. The first production graphic logo can still be recreated as SVG later, but the early distro identity should work cleanly in shell scripts, install logs, terminal banners, and docs.
+The current logo direction is Arch-like in terminal-art texture, but shaped as a Noctra `N` instead of an Arch `A`. It should stay Noctra-specific and avoid copying the official Arch Linux mark. The first production graphic logo can still be recreated as SVG later, but the early distro identity should work cleanly in shell scripts, install logs, terminal banners, and docs.
 
 ## Typography Direction
 

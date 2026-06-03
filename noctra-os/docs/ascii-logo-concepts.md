@@ -191,13 +191,71 @@ Best use:
 MOTD, installer welcome, boot scripts, eventual SVG symbol
 ```
 
+## H. Noctra N Mark
+
+Inspired by Arch-style terminal logo art, but shaped as a Noctra `N`. This is the current strongest direction because it is distinctive, script-friendly, and still feels related to Arch without copying the Arch `A`.
+
+Compact:
+
+```text
+      ++.        .++
+     +ooo.      .ooo+
+    +ooooo.    .ooooo+
+   +ooo+ooo.  .ooo+ooo+
+  +ooo+ +ooo..ooo+ +ooo+
+ +ooo+   +oooooo+   +ooo+
++ooo+     +oooo+     +ooo+
+```
+
+Terminal mark:
+
+```text
+      ++.        .++        NOCTRA OS
+     +ooo.      .ooo+       Tor Locked by default
+    +ooooo.    .ooooo+      Arch-based privacy desktop
+   +ooo+ooo.  .ooo+ooo+
+  +ooo+ +ooo..ooo+ +ooo+
+ +ooo+   +oooooo+   +ooo+
++ooo+     +oooo+     +ooo+
+```
+
+Sharper slash variant:
+
+```text
+      /+.        ./+
+     /ooo.      ./oo+
+    /ooooo.    ./oooo+
+   /ooo/ooo.  ./ooo/oo+
+  /ooo/ /ooo../ooo/ /oo+
+ /ooo/   /oooooo/   /oo+
+/ooo/     /oooo/     /oo+
+```
+
+Dense MOTD:
+
+```text
+      ++.        .++        _   _  ___   ____ _____ ____      _
+     +ooo.      .ooo+      | \ | |/ _ \ / ___|_   _|  _ \    / \
+    +ooooo.    .ooooo+     |  \| | | | | |     | | | |_) |  / _ \
+   +ooo+ooo.  .ooo+ooo+    | |\  | |_| | |___  | | |  _ <  / ___ \
+  +ooo+ +ooo..ooo+ +ooo+   |_| \_|\___/ \____| |_| |_| \_\/_/   \_\
+ +ooo+   +oooooo+   +ooo+
++ooo+     +oooo+     +ooo+  -----[ Tor Locked by default ]-----
+```
+
+Best use:
+
+```text
+MOTD, terminal welcome, installer welcome, future SVG symbol
+```
+
 ## Recommendation
 
 Use a two-tier identity:
 
 ```text
-Primary terminal/header mark: option G Peak Mark
-Full boot/MOTD banner: option G Dense MOTD
+Primary terminal/header mark: option H Noctra N Mark
+Full boot/MOTD banner: option H Dense MOTD
 Short CLI mark: N/ NOCTRA or -----[ NOCTRA ]-----
 ```
 
