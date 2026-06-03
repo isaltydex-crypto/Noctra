@@ -138,14 +138,67 @@ Best use:
 /etc/motd, build logs, installer shell, README
 ```
 
+## G. Peak Mark
+
+Arch-like in spirit: sharp, minimal, mountain/peak geometry. This should not copy the official Arch Linux logo; treat it as a Noctra-specific angular mark.
+
+Compact:
+
+```text
+   /\
+  /  \
+ / /\ \
+/_/  \_\  NOCTRA
+```
+
+More balanced:
+
+```text
+      /\
+     /  \
+    / /\ \
+   / /  \ \
+  /_/____\_\
+
+-----[ NOCTRA ]-----
+```
+
+Wide terminal header:
+
+```text
+        /\              NOCTRA OS
+       /  \             Tor Locked by default
+      / /\ \            Arch-based privacy desktop
+     / /  \ \
+    /_/____\_\
+```
+
+Dense MOTD:
+
+```text
+      /\        _   _  ___   ____ _____ ____      _
+     /  \      | \ | |/ _ \ / ___|_   _|  _ \    / \
+    / /\ \     |  \| | | | | |     | | | |_) |  / _ \
+   / /  \ \    | |\  | |_| | |___  | | |  _ <  / ___ \
+  /_/____\_\   |_| \_|\___/ \____| |_| |_| \_\/_/   \_\
+
+-----[ Tor Locked by default ]-----
+```
+
+Best use:
+
+```text
+MOTD, installer welcome, boot scripts, eventual SVG symbol
+```
+
 ## Recommendation
 
 Use a two-tier identity:
 
 ```text
-Primary terminal/header mark: -----[ NOCTRA ]-----
-Full boot/MOTD banner: option F
-Short CLI mark: N/ NOCTRA
+Primary terminal/header mark: option G Peak Mark
+Full boot/MOTD banner: option G Dense MOTD
+Short CLI mark: N/ NOCTRA or -----[ NOCTRA ]-----
 ```
 
 This keeps the brand script-friendly now, while leaving room for a refined SVG symbol later.
