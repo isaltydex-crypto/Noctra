@@ -35,3 +35,5 @@ The first milestone is a bootable live ISO that starts Plasma, runs Tor Locked m
 Use a clean Arch Linux VM for ISO builds. Windows and WSL are fine for editing this repository, but `mkarchiso` should be run on Arch for predictable results.
 
 See `docs/build-arch-vm.md`.
+
+For a native build laptop without a VM, see `docs/arch-build-laptop-step-by-step.md`.

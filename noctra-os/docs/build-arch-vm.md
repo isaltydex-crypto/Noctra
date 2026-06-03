@@ -8,6 +8,8 @@
 - Disk: 40-80 GB
 - Network: enabled for package downloads
 
+If you are using a separate laptop instead of a VM, follow `docs/arch-build-laptop-step-by-step.md`.
+
 ## Install Build Tools
 
 ```bash
