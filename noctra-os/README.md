@@ -37,3 +37,5 @@ Use a clean Arch Linux VM for ISO builds. Windows and WSL are fine for editing t
 See `docs/build-arch-vm.md`.
 
 For a native build laptop without a VM, see `docs/arch-build-laptop-step-by-step.md`.
+
+For quick commands and current project state, see `docs/cheatsheet.md`.
