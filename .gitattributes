@@ -9,3 +9,5 @@
 *.timer text eol=lf
 *.x86_64 text eol=lf
 PKGBUILD text eol=lf
+noctra-os/archiso/airootfs/usr/local/bin/* text eol=lf
+noctra-os/packages/*/* text eol=lf

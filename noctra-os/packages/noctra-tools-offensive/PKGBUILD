@@ -1,0 +1,23 @@
+# Maintainer: Noctra OS
+pkgname=noctra-tools-offensive
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Optional Noctra OS offensive-security tool bundle"
+arch=('any')
+url="https://github.com/isaltydex-crypto/Noctra"
+license=('GPL-3.0-or-later')
+depends=(
+  'aircrack-ng'
+  'gdb'
+  'hashcat'
+  'john'
+  'radare2'
+  'sqlmap'
+  'wireshark-qt'
+)
+source=()
+sha256sums=()
+
+package() {
+  install -dm755 "${pkgdir}/usr/share/noctra/tools-offensive"
+}

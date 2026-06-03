@@ -1,0 +1,39 @@
+flush ruleset
+
+table inet noctra_filter {
+  chain input {
+    type filter hook input priority 0; policy drop;
+    iif "lo" accept
+    ct state established,related accept
+    ip protocol icmp accept
+  }
+
+  chain forward {
+    type filter hook forward priority 0; policy drop;
+  }
+
+  chain output {
+    type filter hook output priority 0; policy drop;
+    oif "lo" accept
+    ct state established,related accept
+
+    meta skuid "tor" accept
+
+    udp dport { 67, 68 } accept
+
+    tcp dport 9040 accept
+    tcp dport 9050 accept
+    udp dport 5353 accept
+  }
+}
+
+table ip noctra_nat {
+  chain output {
+    type nat hook output priority -100; policy accept;
+
+    meta skuid "tor" return
+    ip daddr 127.0.0.0/8 return
+    udp dport 53 redirect to :5353
+    tcp flags & (fin|syn|rst|ack) == syn redirect to :9040
+  }
+}

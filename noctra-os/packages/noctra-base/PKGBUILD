@@ -1,0 +1,26 @@
+# Maintainer: Noctra OS
+pkgname=noctra-base
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Noctra OS base system defaults"
+arch=('any')
+url="https://github.com/isaltydex-crypto/Noctra"
+license=('GPL-3.0-or-later')
+depends=(
+  'amd-ucode'
+  'base'
+  'cryptsetup'
+  'intel-ucode'
+  'linux'
+  'linux-firmware'
+  'networkmanager'
+  'noctra-network'
+  'sudo'
+)
+source=()
+sha256sums=()
+
+package() {
+  install -dm755 "${pkgdir}/etc/noctra"
+  printf '%s\n' 'tor-locked' > "${pkgdir}/etc/noctra/network-mode"
+}

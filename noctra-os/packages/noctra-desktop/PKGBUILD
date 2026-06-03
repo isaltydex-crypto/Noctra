@@ -1,0 +1,33 @@
+# Maintainer: Noctra OS
+pkgname=noctra-desktop
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Noctra OS KDE Plasma desktop profile"
+arch=('any')
+url="https://github.com/isaltydex-crypto/Noctra"
+license=('GPL-3.0-or-later')
+depends=(
+  'ark'
+  'breeze'
+  'breeze-gtk'
+  'dolphin'
+  'firefox'
+  'konsole'
+  'noto-fonts'
+  'noto-fonts-emoji'
+  'papirus-icon-theme'
+  'plasma-desktop'
+  'plasma-nm'
+  'plasma-pa'
+  'plasma-workspace'
+  'powerdevil'
+  'sddm'
+  'spectacle'
+  'systemsettings'
+)
+source=()
+sha256sums=()
+
+package() {
+  install -dm755 "${pkgdir}/usr/share/noctra/desktop"
+}

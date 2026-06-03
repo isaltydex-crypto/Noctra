@@ -30,6 +30,16 @@ Target behavior:
 - writes a local audit line to the journal
 - panel indicator shows current mode
 
+Current CLI:
+
+```bash
+noctra-network-mode status
+sudo noctra-network-mode clearnet-unlock 10
+sudo noctra-network-mode tor-locked
+```
+
+The unlock duration is limited to 1-240 minutes.
+
 ## Future App-Based Mode
 
 A later version can add per-app clearnet by running approved programs under a dedicated `clearnet` group or user and allowing direct outbound traffic only for that identity.

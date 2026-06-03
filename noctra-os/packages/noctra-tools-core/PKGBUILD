@@ -1,0 +1,30 @@
+# Maintainer: Noctra OS
+pkgname=noctra-tools-core
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Noctra OS lightweight control and visibility tools"
+arch=('any')
+url="https://github.com/isaltydex-crypto/Noctra"
+license=('GPL-3.0-or-later')
+depends=(
+  'bind'
+  'firejail'
+  'iftop'
+  'keepassxc'
+  'lsof'
+  'nethogs'
+  'nmap'
+  'nyx'
+  'strace'
+  'tcpdump'
+  'traceroute'
+  'usbguard'
+  'whois'
+  'wireshark-qt'
+)
+source=()
+sha256sums=()
+
+package() {
+  install -dm755 "${pkgdir}/usr/share/noctra/tools-core"
+}

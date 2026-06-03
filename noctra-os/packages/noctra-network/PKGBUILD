@@ -1,0 +1,28 @@
+# Maintainer: Noctra OS
+pkgname=noctra-network
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Noctra Tor Locked and Clearnet Unlock network policy"
+arch=('any')
+url="https://github.com/isaltydex-crypto/Noctra"
+license=('GPL-3.0-or-later')
+depends=('bash' 'nftables' 'systemd' 'tor')
+backup=(
+  'etc/noctra/nftables/tor-locked.nft'
+  'etc/noctra/nftables/clearnet-unlock.nft'
+  'etc/tor/torrc'
+)
+source=(
+  'noctra-network-mode'
+  'tor-locked.nft'
+  'clearnet-unlock.nft'
+  'torrc'
+)
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP')
+
+package() {
+  install -Dm755 noctra-network-mode "${pkgdir}/usr/local/bin/noctra-network-mode"
+  install -Dm644 tor-locked.nft "${pkgdir}/etc/noctra/nftables/tor-locked.nft"
+  install -Dm644 clearnet-unlock.nft "${pkgdir}/etc/noctra/nftables/clearnet-unlock.nft"
+  install -Dm644 torrc "${pkgdir}/etc/tor/torrc"
+}
