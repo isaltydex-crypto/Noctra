@@ -1,0 +1,92 @@
+# ArchISO base
+base
+linux
+linux-firmware
+arch-install-scripts
+pacman
+sudo
+vim
+nano
+less
+man-db
+man-pages
+
+# Boot and filesystems
+grub
+efibootmgr
+dosfstools
+e2fsprogs
+btrfs-progs
+xfsprogs
+cryptsetup
+lvm2
+device-mapper
+mdadm
+parted
+gptfdisk
+smartmontools
+intel-ucode
+amd-ucode
+
+# Desktop
+plasma-desktop
+plasma-workspace
+plasma-nm
+plasma-pa
+powerdevil
+systemsettings
+dolphin
+konsole
+ark
+spectacle
+sddm
+xorg-server
+xorg-xwayland
+mesa
+pipewire
+pipewire-pulse
+wireplumber
+
+# Network and privacy
+networkmanager
+nftables
+tor
+torsocks
+nyx
+openresolv
+wireguard-tools
+
+# Visibility and control tools
+wireshark-qt
+tcpdump
+nmap
+whois
+bind
+traceroute
+iftop
+nethogs
+lsof
+strace
+usbutils
+pciutils
+
+# User security tools
+keepassxc
+usbguard
+firejail
+
+# Browser
+firefox
+
+# Fonts and visual polish
+noto-fonts
+noto-fonts-emoji
+ttf-dejavu
+ttf-liberation
+papirus-icon-theme
+breeze
+breeze-gtk
+
+# Installer placeholder:
+# Calamares should come from a signed Noctra repository or controlled local package.
+# calamares

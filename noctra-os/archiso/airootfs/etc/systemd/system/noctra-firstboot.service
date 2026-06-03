@@ -1,0 +1,13 @@
+[Unit]
+Description=Noctra first boot setup
+After=multi-user.target
+ConditionPathExists=!/etc/noctra/firstboot.done
+
+[Service]
+Type=oneshot
+ExecStart=/root/noctra-firstboot.sh
+ExecStartPost=/usr/bin/mkdir -p /etc/noctra
+ExecStartPost=/usr/bin/touch /etc/noctra/firstboot.done
+
+[Install]
+WantedBy=multi-user.target
