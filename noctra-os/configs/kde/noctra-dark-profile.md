@@ -69,4 +69,12 @@ KDE defaults can be shipped through a future `noctra-desktop` or `noctra-brandin
 /etc/xdg/
 ```
 
+Current first-pass overlay:
+
+```text
+noctra-os/configs/kde/noctra-desktop-config/
+```
+
+The first overlay sets color scheme, Breeze Dark baseline, Papirus-Dark icons, left-side window controls, and dark lock screen defaults. Panel and dock layout should wait until the first booting ISO confirms the exact Plasma version.
+
 Do not overfit the first ISO. Get a reliable booting Plasma session first, then iterate on exact panels and themes.

@@ -136,6 +136,7 @@ Current package directories:
 ```text
 noctra-os/packages/noctra-base/
 noctra-os/packages/noctra-branding/
+noctra-os/packages/noctra-calamares-config/
 noctra-os/packages/noctra-desktop/
 noctra-os/packages/noctra-network/
 noctra-os/packages/noctra-tools-core/
@@ -162,6 +163,9 @@ noctra-os/README.md
 noctra-os/docs/arch-build-laptop-step-by-step.md
 noctra-os/docs/build-arch-vm.md
 noctra-os/docs/branding.md
+noctra-os/configs/calamares/README.md
+noctra-os/configs/kde/noctra-dark-profile.md
+noctra-os/configs/kde/noctra-desktop-config/
 noctra-os/docs/network-model.md
 noctra-os/docs/security-baseline.md
 noctra-os/packages/README.md
@@ -181,25 +185,23 @@ Disk encryption: LUKS2 by default
 Default network mode: Tor Locked
 Clearnet: manual, time-limited unlock
 Tooling style: lightweight control/visibility, not a full pentesting distro
+Live ISO bootloader: GRUB, UEFI x86_64 only for first milestone
 ```
 
 ## Branding
 
-Current logo directions:
+Current logo status:
 
 ```text
-Primary terminal/header mark: Arch-style Noctra N mark
-Full boot/MOTD banner: Noctra N mark + ASCII NOCTRA wordmark
-Short CLI mark: N/ NOCTRA
+Logo: not selected
+Direction: premium privacy/security, clear N, SVG-friendly
+Accent: restrained cyan/blue
 ```
 
 Branding doc:
 
 ```text
 noctra-os/docs/branding.md
-noctra-os/docs/ascii-logo-concepts.md
-noctra-os/docs/assets/noctra-n-logo-concepts-v1.png
-noctra-os/docs/assets/noctra-logo-concepts-v1.png
 ```
 
 ## First ISO Test Checklist
@@ -207,6 +209,7 @@ noctra-os/docs/assets/noctra-logo-concepts-v1.png
 After booting the ISO:
 
 ```bash
+noctra-health-check
 systemctl status sddm
 systemctl status NetworkManager
 systemctl status tor
@@ -234,11 +237,12 @@ nyx
 
 - First `mkarchiso` build on native Arch laptop
 - Fix package availability issues from first build
-- Select final ASCII/header direction
+- Build/version-pin Calamares
+- Validate `noctra-calamares-config` with `calamares -d`
+- Select final logo direction
 - Convert selected direction to SVG if needed
-- Create real KDE Plasma layout config
-- Build and package Calamares
-- Create `noctra-calamares-config`
+- Test Noctra Dark KDE defaults on first booting ISO
+- Create real KDE Plasma panel/dock layout config
 - Test LUKS2 install flow
 - Add panel/network mode indicator
 - Build signed Noctra package repository
@@ -248,9 +252,9 @@ nyx
 ```text
 2026-06-04: Initial cheatsheet created.
 2026-06-04: Added Noctra Dark branding direction and logo concept options.
-2026-06-04: Replaced raster logo direction with ASCII/script-friendly concepts.
-2026-06-04: Added Arch-like Noctra peak mark direction.
-2026-06-04: Added Arch-style Noctra N ASCII mark.
-2026-06-04: Corrected Noctra N mark so it reads as N, not M.
-2026-06-04: Added normal N logo concept sheet.
+2026-06-04: Removed rejected logo concept files and reset logo status to pending.
+2026-06-04: Added first-pass Noctra Calamares config skeleton.
+2026-06-04: Added first-pass Noctra Dark KDE config overlay.
+2026-06-04: Added Noctra live ISO health-check command.
+2026-06-04: Switched first ISO profile to UEFI x86_64 GRUB-only boot.
 ```

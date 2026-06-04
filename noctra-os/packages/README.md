@@ -28,6 +28,13 @@ cd noctra-os/packages/noctra-network
 makepkg -s
 ```
 
+Build the installer config package:
+
+```bash
+cd noctra-os/packages/noctra-calamares-config
+makepkg -s
+```
+
 For production:
 
 1. build packages in a clean chroot

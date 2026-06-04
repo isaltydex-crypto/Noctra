@@ -1,0 +1,17 @@
+pkgname=noctra-calamares-config
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Noctra OS Calamares installer configuration"
+arch=('any')
+license=('MIT')
+depends=('calamares' 'grub' 'cryptsetup' 'mkinitcpio')
+source=()
+sha256sums=()
+
+package() {
+  local config_root="${srcdir}/../../../configs/calamares/noctra-calamares-config/etc/calamares"
+
+  install -dm755 "${pkgdir}/etc/calamares"
+  cp -a "${config_root}/." "${pkgdir}/etc/calamares/"
+}
+

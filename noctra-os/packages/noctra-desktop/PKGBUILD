@@ -29,5 +29,8 @@ source=()
 sha256sums=()
 
 package() {
+  local config_root="${srcdir}/../../../configs/kde/noctra-desktop-config/rootfs"
+
   install -dm755 "${pkgdir}/usr/share/noctra/desktop"
+  cp -a "${config_root}/." "${pkgdir}/"
 }

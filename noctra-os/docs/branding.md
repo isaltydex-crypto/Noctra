@@ -7,7 +7,7 @@ Living brand direction for Noctra OS.
 ```text
 Visual direction: Noctra Dark
 Accent: restrained cyan/blue
-Logo direction: pending selection from concept options
+Logo direction: pending selection
 Network mode names: Tor Locked / Clearnet Unlock
 Product tone: serious privacy product with premium cyber/security feel
 Avoid: pentesting-distro tone, hacker cliches, skulls, neon overload
@@ -32,52 +32,22 @@ Warning:      #f2b84b
 Danger:       #ef5f67
 ```
 
-## Logo Concepts
+## Logo Direction
 
-The first raster concept sheet was rejected. The current direction is ASCII/script-friendly branding:
+Logo selection is open. Rejected directions:
 
-```text
-docs/ascii-logo-concepts.md
-```
+- first raster concept sheet
+- previous ASCII/Arch-style mark set
+- previous normal N concept sheet
 
-Current recommended identity:
+Next concepts should prioritize:
 
-```text
-Primary terminal/header mark: Arch-style Noctra N mark
-Full boot/MOTD banner: Noctra N mark + ASCII NOCTRA wordmark
-Short CLI mark: N/ NOCTRA
-```
-
-The current logo direction is Arch-like in terminal-art texture, but shaped as a Noctra `N` instead of an Arch `A`. It should stay Noctra-specific and avoid copying the official Arch Linux mark. The first production graphic logo can still be recreated as SVG later, but the early distro identity should work cleanly in shell scripts, install logs, terminal banners, and docs.
-
-## N Logo Concepts
-
-Normal logo sketch sheet:
-
-```text
-docs/assets/noctra-n-logo-concepts-v1.png
-```
-
-Concept directions:
-
-```text
-A: sharp angular N peak
-B: shield-shaped N negative space
-C: crescent/night-cut N
-D: monoline geometric N
-E: split N with privacy veil
-F: terminal/circuit N
-G: folded ribbon N
-H: compact app-icon N
-```
-
-Selection criteria:
-
-- must clearly read as `N`
-- must work as app icon and OS mark
-- must be simple enough to redraw as SVG
-- should feel premium/privacy, not pentesting
-- should avoid copying Arch Linux directly
+- clear `N` readability at small sizes
+- deterministic SVG/vector reproduction
+- premium privacy/security tone
+- restrained cyan/blue accent use
+- no direct Arch Linux logo copy
+- no pentesting/hacker cliches
 
 ## Typography Direction
 
@@ -130,7 +100,6 @@ Noctra OS is a privacy-first Arch-based desktop built for encrypted systems, Tor
 Future assets:
 
 ```text
-ascii-logo.txt
 logo-symbol.svg
 logo-wordmark.svg
 wallpaper-default.png
@@ -139,4 +108,4 @@ plasma-look-and-feel/
 noctra-color-scheme.colors
 ```
 
-The first production logo should be deterministic and reproducible. Prefer ASCII and SVG assets over AI-generated raster logos.
+The first production logo should be deterministic and reproducible. Prefer SVG assets over AI-generated raster logos.

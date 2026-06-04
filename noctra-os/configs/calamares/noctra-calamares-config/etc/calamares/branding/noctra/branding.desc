@@ -1,0 +1,30 @@
+componentName: noctra
+
+strings:
+  productName:         "Noctra OS"
+  shortProductName:    "Noctra"
+  version:             "rolling"
+  shortVersion:        "rolling"
+  versionedName:       "Noctra OS"
+  shortVersionedName:  "Noctra"
+  bootloaderEntryName: "Noctra OS"
+  productUrl:          "https://github.com/isaltydex-crypto/Noctra"
+  supportUrl:          "https://github.com/isaltydex-crypto/Noctra/issues"
+  knownIssuesUrl:      "https://github.com/isaltydex-crypto/Noctra/issues"
+  releaseNotesUrl:     "https://github.com/isaltydex-crypto/Noctra"
+
+images:
+  productLogo:         "logo.png"
+  productIcon:         "logo.png"
+  productWelcome:      "welcome.png"
+
+style:
+  sidebarBackground:   "#07090d"
+  sidebarText:         "#f2f6fb"
+  sidebarTextSelect:   "#18bdf2"
+
+slideshow:               "show.qml"
+slideshowAPI:            1
+windowExpanding:         normal
+windowSize:              1000px,680px
+

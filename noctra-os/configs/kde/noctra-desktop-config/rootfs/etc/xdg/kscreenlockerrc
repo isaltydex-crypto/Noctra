@@ -1,0 +1,6 @@
+[Greeter]
+Theme=org.kde.breeze.desktop
+
+[Greeter][Wallpaper][org.kde.image][General]
+Color=#07090d
+

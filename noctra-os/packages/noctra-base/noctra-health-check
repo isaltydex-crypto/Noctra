@@ -1,0 +1,74 @@
+#!/usr/bin/env bash
+set -u
+
+failures=0
+
+check_command() {
+  local name="$1"
+
+  if command -v "$name" >/dev/null 2>&1; then
+    printf '[OK] command: %s\n' "$name"
+  else
+    printf '[FAIL] command missing: %s\n' "$name"
+    failures=$((failures + 1))
+  fi
+}
+
+check_service() {
+  local service="$1"
+
+  if systemctl is-enabled "$service" >/dev/null 2>&1; then
+    printf '[OK] enabled: %s\n' "$service"
+  else
+    printf '[FAIL] not enabled: %s\n' "$service"
+    failures=$((failures + 1))
+  fi
+
+  if systemctl is-active "$service" >/dev/null 2>&1; then
+    printf '[OK] active: %s\n' "$service"
+  else
+    printf '[WARN] not active: %s\n' "$service"
+  fi
+}
+
+printf 'Noctra health check\n'
+printf '====================\n\n'
+
+check_command noctra-network-mode
+check_command nft
+check_command tor
+
+printf '\nServices\n'
+printf '--------\n'
+check_service NetworkManager.service
+check_service sddm.service
+check_service tor.service
+check_service nftables.service
+
+printf '\nNetwork mode\n'
+printf '------------\n'
+if command -v noctra-network-mode >/dev/null 2>&1; then
+  noctra-network-mode status || failures=$((failures + 1))
+fi
+
+printf '\nFirewall\n'
+printf '--------\n'
+if command -v nft >/dev/null 2>&1; then
+  if nft list ruleset >/dev/null 2>&1; then
+    printf '[OK] nftables ruleset readable\n'
+  else
+    printf '[FAIL] nftables ruleset not readable\n'
+    failures=$((failures + 1))
+  fi
+fi
+
+printf '\nResult\n'
+printf '------\n'
+if (( failures == 0 )); then
+  printf '[OK] No blocking health-check failures found\n'
+else
+  printf '[FAIL] %d blocking health-check failure(s)\n' "$failures"
+fi
+
+exit "$failures"
+

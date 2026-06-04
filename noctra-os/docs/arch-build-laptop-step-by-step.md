@@ -156,6 +156,8 @@ If the repo is private, GitHub may ask for credentials or a personal access toke
 
 ## 8. Build First Noctra ISO
 
+Noctra's first ISO profile is UEFI x86_64 GRUB-only. Disable legacy/CSM boot in firmware when testing it.
+
 From the cloned repo root:
 
 ```bash
@@ -190,6 +192,7 @@ Useful quick checks:
 ```bash
 pacman -Q archiso
 ls -la noctra-os/archiso
+ls -la noctra-os/archiso/grub
 ls -la noctra-os/out
 ```
 
@@ -217,6 +220,7 @@ Then run:
 ```bash
 qemu-system-x86_64 \
   -enable-kvm \
+  -bios /usr/share/edk2/x64/OVMF.4m.fd \
   -m 4096 \
   -cpu host \
   -cdrom out/noctra-os-*.iso \

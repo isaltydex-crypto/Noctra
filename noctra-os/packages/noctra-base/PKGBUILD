@@ -17,10 +17,11 @@ depends=(
   'noctra-network'
   'sudo'
 )
-source=()
-sha256sums=()
+source=('noctra-health-check')
+sha256sums=('SKIP')
 
 package() {
   install -dm755 "${pkgdir}/etc/noctra"
   printf '%s\n' 'tor-locked' > "${pkgdir}/etc/noctra/network-mode"
+  install -Dm755 noctra-health-check "${pkgdir}/usr/bin/noctra-health-check"
 }
