@@ -4,6 +4,8 @@ archiso
 linux
 linux-firmware
 arch-install-scripts
+mkinitcpio
+mkinitcpio-archiso
 pacman
 sudo
 vim
@@ -26,6 +28,7 @@ mdadm
 parted
 gptfdisk
 smartmontools
+squashfs-tools
 intel-ucode
 amd-ucode
 

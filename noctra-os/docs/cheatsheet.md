@@ -61,7 +61,7 @@ Expected ISO output:
 noctra-os/out/noctra-os-*.iso
 ```
 
-The live ISO package list must include `archiso`. Without it, the generated initramfs may fail to mount the live squashfs root and drop into emergency boot errors such as `Failed to start Switch Root`.
+The live ISO package list must include `mkinitcpio-archiso`. Without it, the generated initramfs may fail to mount the live squashfs root and drop into emergency boot errors such as `Failed to start Switch Root`.
 
 Clean rebuild:
 
@@ -260,4 +260,5 @@ nyx
 2026-06-04: Added Noctra live ISO health-check command.
 2026-06-04: Switched first ISO profile to UEFI x86_64 GRUB-only boot.
 2026-06-04: Added `archiso` to live package list for archiso initramfs hooks.
+2026-06-04: Added `mkinitcpio-archiso` and `squashfs-tools` to fix live-root mounting.
 ```
