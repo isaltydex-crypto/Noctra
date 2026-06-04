@@ -1,5 +1,6 @@
 # ArchISO base
 base
+archiso
 linux
 linux-firmware
 arch-install-scripts
