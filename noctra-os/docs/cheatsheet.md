@@ -198,6 +198,7 @@ Branding doc:
 ```text
 noctra-os/docs/branding.md
 noctra-os/docs/ascii-logo-concepts.md
+noctra-os/docs/assets/noctra-n-logo-concepts-v1.png
 noctra-os/docs/assets/noctra-logo-concepts-v1.png
 ```
 
@@ -251,4 +252,5 @@ nyx
 2026-06-04: Added Arch-like Noctra peak mark direction.
 2026-06-04: Added Arch-style Noctra N ASCII mark.
 2026-06-04: Corrected Noctra N mark so it reads as N, not M.
+2026-06-04: Added normal N logo concept sheet.
 ```

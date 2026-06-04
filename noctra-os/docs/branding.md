@@ -50,6 +50,35 @@ Short CLI mark: N/ NOCTRA
 
 The current logo direction is Arch-like in terminal-art texture, but shaped as a Noctra `N` instead of an Arch `A`. It should stay Noctra-specific and avoid copying the official Arch Linux mark. The first production graphic logo can still be recreated as SVG later, but the early distro identity should work cleanly in shell scripts, install logs, terminal banners, and docs.
 
+## N Logo Concepts
+
+Normal logo sketch sheet:
+
+```text
+docs/assets/noctra-n-logo-concepts-v1.png
+```
+
+Concept directions:
+
+```text
+A: sharp angular N peak
+B: shield-shaped N negative space
+C: crescent/night-cut N
+D: monoline geometric N
+E: split N with privacy veil
+F: terminal/circuit N
+G: folded ribbon N
+H: compact app-icon N
+```
+
+Selection criteria:
+
+- must clearly read as `N`
+- must work as app icon and OS mark
+- must be simple enough to redraw as SVG
+- should feel premium/privacy, not pentesting
+- should avoid copying Arch Linux directly
+
 ## Typography Direction
 
 Use clean geometric sans-serif typography. The wordmark should be wide, calm, and technical without becoming sci-fi.
