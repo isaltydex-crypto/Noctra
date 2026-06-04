@@ -198,49 +198,60 @@ Inspired by Arch-style terminal logo art, but shaped as a Noctra `N`. This is th
 Compact:
 
 ```text
-      ++.        .++
-     +ooo.      .ooo+
-    +ooooo.    .ooooo+
-   +ooo+ooo.  .ooo+ooo+
-  +ooo+ +ooo..ooo+ +ooo+
- +ooo+   +oooooo+   +ooo+
-+ooo+     +oooo+     +ooo+
++ooo+        +ooo+
++oooo+       +ooo+
++oo+oo+      +ooo+
++oo+ +oo+    +ooo+
++oo+  +oo+   +ooo+
++oo+   +oo+  +ooo+
++oo+    +oo+ +ooo+
++oo+     +oo++ooo+
++oo+      +oooooo+
++oo+       +ooooo+
 ```
 
 Terminal mark:
 
 ```text
-      ++.        .++        NOCTRA OS
-     +ooo.      .ooo+       Tor Locked by default
-    +ooooo.    .ooooo+      Arch-based privacy desktop
-   +ooo+ooo.  .ooo+ooo+
-  +ooo+ +ooo..ooo+ +ooo+
- +ooo+   +oooooo+   +ooo+
-+ooo+     +oooo+     +ooo+
++ooo+        +ooo+      NOCTRA OS
++oooo+       +ooo+      Tor Locked by default
++oo+oo+      +ooo+      Arch-based privacy desktop
++oo+ +oo+    +ooo+
++oo+  +oo+   +ooo+
++oo+   +oo+  +ooo+
++oo+    +oo+ +ooo+
++oo+     +oo++ooo+
++oo+      +oooooo+
++oo+       +ooooo+
 ```
 
 Sharper slash variant:
 
 ```text
-      /+.        ./+
-     /ooo.      ./oo+
-    /ooooo.    ./oooo+
-   /ooo/ooo.  ./ooo/oo+
-  /ooo/ /ooo../ooo/ /oo+
- /ooo/   /oooooo/   /oo+
-/ooo/     /oooo/     /oo+
+/oo/        /oo/
+/ooo/       /oo/
+/oo/oo/     /oo/
+/oo/ /oo/   /oo/
+/oo/  /oo/  /oo/
+/oo/   /oo/ /oo/
+/oo/    /oo//oo/
+/oo/     /oooo/
+/oo/      /ooo/
 ```
 
 Dense MOTD:
 
 ```text
-      ++.        .++        _   _  ___   ____ _____ ____      _
-     +ooo.      .ooo+      | \ | |/ _ \ / ___|_   _|  _ \    / \
-    +ooooo.    .ooooo+     |  \| | | | | |     | | | |_) |  / _ \
-   +ooo+ooo.  .ooo+ooo+    | |\  | |_| | |___  | | |  _ <  / ___ \
-  +ooo+ +ooo..ooo+ +ooo+   |_| \_|\___/ \____| |_| |_| \_\/_/   \_\
- +ooo+   +oooooo+   +ooo+
-+ooo+     +oooo+     +ooo+  -----[ Tor Locked by default ]-----
++ooo+        +ooo+      _   _  ___   ____ _____ ____      _
++oooo+       +ooo+     | \ | |/ _ \ / ___|_   _|  _ \    / \
++oo+oo+      +ooo+     |  \| | | | | |     | | | |_) |  / _ \
++oo+ +oo+    +ooo+     | |\  | |_| | |___  | | |  _ <  / ___ \
++oo+  +oo+   +ooo+     |_| \_|\___/ \____| |_| |_| \_\/_/   \_\
++oo+   +oo+  +ooo+
++oo+    +oo+ +ooo+
++oo+     +oo++ooo+     -----[ Tor Locked by default ]-----
++oo+      +oooooo+
++oo+       +ooooo+
 ```
 
 Best use:

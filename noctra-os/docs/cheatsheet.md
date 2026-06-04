@@ -250,4 +250,5 @@ nyx
 2026-06-04: Replaced raster logo direction with ASCII/script-friendly concepts.
 2026-06-04: Added Arch-like Noctra peak mark direction.
 2026-06-04: Added Arch-style Noctra N ASCII mark.
+2026-06-04: Corrected Noctra N mark so it reads as N, not M.
 ```
