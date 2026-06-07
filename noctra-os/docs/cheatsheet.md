@@ -174,6 +174,7 @@ noctra-os/README.md
 noctra-os/docs/arch-build-laptop-step-by-step.md
 noctra-os/docs/build-arch-vm.md
 noctra-os/docs/branding.md
+noctra-os/docs/first-iso-test.md
 noctra-os/configs/calamares/README.md
 noctra-os/configs/kde/noctra-dark-profile.md
 noctra-os/configs/kde/noctra-desktop-config/
@@ -217,6 +218,12 @@ noctra-os/docs/branding.md
 
 ## First ISO Test Checklist
 
+Full protocol:
+
+```text
+noctra-os/docs/first-iso-test.md
+```
+
 After booting the ISO:
 
 ```bash
@@ -248,6 +255,7 @@ nyx
 
 - First `mkarchiso` build on native Arch laptop
 - Fix package availability issues from first build
+- Run and record first ISO test protocol
 - Build/version-pin Calamares
 - Validate `noctra-calamares-config` with `calamares -d`
 - Select final logo direction
@@ -272,4 +280,5 @@ nyx
 2026-06-04: Added `mkinitcpio-archiso` and `squashfs-tools` to fix live-root mounting.
 2026-06-04: Added archiso mkinitcpio config and linux preset for live initramfs.
 2026-06-07: Reduced archiso initramfs hooks to local ISO/USB boot only.
+2026-06-07: Added first ISO test protocol.
 ```
