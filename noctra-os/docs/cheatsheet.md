@@ -70,6 +70,8 @@ noctra-os/archiso/airootfs/etc/mkinitcpio.conf.d/archiso.conf
 noctra-os/archiso/airootfs/etc/mkinitcpio.d/linux.preset
 ```
 
+The Noctra first milestone uses a local ISO/USB initramfs only. Keep PXE/NBD/NFS archiso hooks out of `archiso.conf` unless the matching packages are added intentionally.
+
 Clean rebuild:
 
 ```bash
@@ -269,4 +271,5 @@ nyx
 2026-06-04: Added `archiso` to live package list for archiso initramfs hooks.
 2026-06-04: Added `mkinitcpio-archiso` and `squashfs-tools` to fix live-root mounting.
 2026-06-04: Added archiso mkinitcpio config and linux preset for live initramfs.
+2026-06-07: Reduced archiso initramfs hooks to local ISO/USB boot only.
 ```
